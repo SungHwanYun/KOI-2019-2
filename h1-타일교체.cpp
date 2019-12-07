@@ -103,7 +103,7 @@ int f() {
 		if (ur == N - 1 && uc == N - 1) {
 			return B[ur][uc];
 		}
-		a = X[A[ur][uc]][ud]; b = X[A[ur][uc]][1 - ud]; // a->b ¹æÇâ
+		a = X[A[ur][uc]][ud]; b = X[A[ur][uc]][1 - ud]; // a->b Â¹Ã¦Ã‡Ã¢
 		if (g(ur, uc, b, vr, vc, vd) == 0) continue;
 		if (B[vr][vc] != -1) continue; // cycle
 		Q.push(struct info(vr, vc, vd));
@@ -113,7 +113,6 @@ int f() {
 }
 int main() {
 	int i, j, k, ans=INT_MAX;
-	freopen("C:\\¾Ë°í¸®Áò\\ÄÚµù\\google\\a.txt", "r", stdin);
 	scanf("%d%d\n", &N, &K);
 	for (i = 0; i < N; i++) for (j = 0; j < N; j++) scanf("%d", &A[i][j]);
 	if (K == 0) {
